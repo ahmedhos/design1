@@ -1,0 +1,3 @@
+5472 x 3648
+
+normaliz.css : : working on all pages as same and cure problems in brawosers and margin ..........

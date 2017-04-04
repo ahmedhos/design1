@@ -1,0 +1,621 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 10, 2016, 2:12:15 PM
+    Author     : Hosam
+*/
+
+/* Start Our FrameWork */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.overlay {
+    background: rgba(49, 55, 61, 0.7);
+    /* (0,0,0,0*opicty*) tet7hem fe darget el shafafia lel loon.*/ 
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.table {
+    height: 100%;
+    display: table;/* Important */
+}
+
+.table-row {
+    display: table-row;
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.main-color {
+    color: #f7600e;
+}
+
+.main-back {
+    background-color: #f7600e;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+:-moz-input-placeholder {
+    font-size: 14px;
+}
+
+:-ms-input-placeholder {
+    font-size: 14px;
+}
+
+/* End Our FrameWork */
+
+/* Start Header */
+
+.header {
+    background-image: url('../images/back_header/1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #FFF; 
+}
+
+.header .navbar {
+    overflow: hidden; /* feeh 3anaser goaah ha3melha float */
+    padding: 20px 0; /*  padding : TOP/down px  right/left px ;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+
+}
+
+.header .navbar .logo {
+	font-size: 24px;
+} 
+
+.header .navbar .links {
+    float: right;
+}
+
+.header .navbar .links i {
+    margin-left: 5px;
+}
+
+.header .intro h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header .intro p {
+    margin: 5px 0 40px;
+    line-height: 1.9;
+    font-size: 20px;
+    color: #E2E2E2;
+}
+
+.header .buttons button {
+    /* el background shafaf */
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 14px;
+    border: 1px solid #909090;
+    margin: 0 8px;
+    border-radius: 10px;
+    /* masool 3an en el loon yezahar bera7a mesh 3ala tool  */
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.header .buttons button:hover {
+    background-color: #f7600e;
+    border: 1px solid #f7600e;
+    color: #FFF;
+}
+
+.header .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header .arrow i {
+    border: 3px solid #7B7B7B;
+    padding: 3px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 32px;
+    cursor: pointer;
+    /*cursor: pointer; 
+    Clicable (Shape ) 
+
+       )))))   
+       ))))))))))))
+       )))))))))  
+       ))))))
+    */
+
+}
+
+/* End Header */
+
+
+/* Start Features */
+.features {
+    padding: 80px 80px 80px 281px;
+    overflow: hidden;
+
+}
+
+.features .box {
+    width: 22%;
+    float: left;
+    margin-right: 4%;
+}
+
+.features .box:last-child {
+    margin-right: 0;
+}
+
+.features .box i {
+    color: #f7600e;
+    border: 3px solid #CCC;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    line-height: 120px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.features .box i:hover {
+    background-color: #f7600e;
+    border: 3px solid #f7600e;
+    color: #FFF;
+}
+
+
+.features .box h3 {
+    color: #666;
+}
+
+.features .box p {
+    line-height: 1.7;
+    color: #888;
+}
+/* End Features */
+
+
+/* Start Subscribe  */
+
+.sub {
+    background-image: url(../images/sub/1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.sub form {
+    padding: 100px 0;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.sub form input[type="email"] {
+    padding: 0 10px;
+    width: 320px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+    border: none;
+    height: 37px;
+    line-height: 37px;
+}
+
+.sub form button {
+    padding: 12px;
+    width: 200px;
+    border: 1px;
+    background-color: #f7600e;
+    border: none;
+    color: #FFF;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    cursor: pointer; 
+}
+
+/* End Subscribe */
+
+/* Start Our Work */
+
+.our-work {
+    padding: 50px 80px 50px 281px;
+}
+
+.our-work h2 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.our-work h2 ~ p {
+    line-height: 1.7;
+    margin: 10px 0 40px;
+}
+
+.our-work .show-more {
+    background: transparent;
+    border: 1px solid #CCC;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #555;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.our-work .show-more:hover {
+    background-color: #f7600e;
+    border: 3px solid #f7600e;
+    color: #FFF;
+}
+
+.our-work .item-box {
+    overflow: hidden;
+    padding-bottom: 28px;
+}
+
+.our-work .item-box .item {
+    float: left;
+    width: 30%;
+    overflow: hidden;
+    margin-left: 1.33333%;
+    margin-bottom: 12px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.our-work .item-box .item:hover .over {
+    display: block;
+}
+
+.our-work .item-box .item .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 96, 14, 0.8);
+    color: #FFF;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    display: none;
+}
+
+.our-work .item-box .item .over h4 {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 0;
+
+}
+
+.our-work .item-box .item .over p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.our-work .item-box .item .over button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.our-work .item-box .item .over button:hover {
+    background-color: #FFF;
+    border: 3px solid #f7600e;
+    color: #f7600e;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.our-work .item-box .item img{
+
+    border-radius: 10px;
+}
+
+/* End Our Work */
+
+/* Start Our Testimonials */
+
+.testim {
+	background-image: url(../images/testim_back/1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+}
+
+.testim .client {
+	padding: 85px 0 0 0;
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+
+}
+
+.testim .client img {
+	border-radius: 50%;
+}
+
+.testim .client p {
+	line-height: 2;
+	font-style: italic;
+}
+
+.testim .fa-chevron-right,
+.testim .fa-chevron-left {
+	position: absolute;
+	top: 60%;
+	color: #999;
+	cursor: pointer;
+}
+
+.testim .fa-chevron-right:hover,
+.testim .fa-chevron-left:hover {
+	color: #f7600e;
+}
+
+.testim .fa-chevron-right {
+	right: 0;
+}
+
+.testim .fa-chevron-left {
+	left: 0;
+	
+}
+
+/* End Our Testimonials */
+
+/* Start Our Team */
+
+.our-team {
+	padding: 50px 80px 50px 281px;
+}
+
+.our-team h2 {
+	font-size: 35px;
+	margin-bottom: 0;
+}
+
+.our-team .main {
+	margin: 10px 0 40px;
+	line-height: 2;
+	color: #666;
+	font-size: 20px;
+}
+
+
+.our-team .the_team {
+	overflow: hidden;
+}
+
+.our-team .the_team .person {
+	float: left;
+	width: 24%;
+	margin-left: 1%;
+	color: #888;
+}
+
+.our-team .the_team .person:hover img {
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+.our-team .the_team .person:hover {
+	color: #222;
+}
+
+.our-team .the_team .person:hover .fa-facebook {
+	background-color: #3b5998;
+}
+
+.our-team .the_team .person:hover .fa-twitter {
+	background-color: #55acee;
+}
+
+.our-team .the_team .person:hover .fa-google {
+	background-color: #dc4e41;
+}
+
+.our-team .the_team .person img {
+	transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+	filter: gray;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+}
+
+.our-team .the_team .person p {
+	font-size: 15px;
+
+}
+
+.our-team .the_team .person .social i {
+	background-color: #9da1a5;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	border-radius: 50%;
+}
+
+/* End Contact Form */
+.contact {
+	background: url(../images/contact_back/1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;	
+}
+
+.contact .overlay {
+	padding: 50px 0;
+	color: #FFF;
+	text-align: center;
+}
+
+.contact h2 {
+	font-size: 35px;
+}
+
+.contact form {
+	width: 700px;
+	text-align: center;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"] {
+	width: 48%;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 10px;
+	border: 1px solid #9da1a5;
+	background-color: transparent;
+	color: #FFF;
+}
+
+.contact form input[type="text"] {
+		float: left;
+}
+
+.contact form input[type="email"] {
+	float: right;
+}
+
+.contact form textarea {
+	margin-top: 20px;
+	width: 100%;
+	padding: 10px;
+	height: 140px;
+	border-radius: 10px;
+	border: 1px solid #9da1a5;
+	background-color: transparent;
+	color: #FFF;
+}
+
+.contact form .info {
+	overflow: hidden;
+margin-top: 10px;
+}
+
+.contact form .info button {
+	float: left;
+	padding: 12px;
+    width: 200px;
+    border: 1px;
+    background-color: #f7600e;
+    border: none;
+    color: #FFF;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.contact form .info .form-icons {
+	float: right;
+}
+
+.contact form .info .form-icons i {
+	background-color: #9da1a5;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	border-radius: 50%;
+}
+
+.contact form .info .form-icons .fa-facebook {
+	background-color: #3b5998;
+}
+
+.contact form .info .form-icons .fa-twitter {
+	background-color: #55acee;
+}
+
+.contact form .info .form-icons .fa-google {
+	background-color: #dc4e41;
+}
+/* End Our Team */
+
+/* Start Footer */
+
+.footer {
+	background-color: #3b434c;
+	color: #FFF;
+	overflow: hidden;
+	padding: 30px 0;
+}
+
+.footer .copy {
+	float: left;
+}
+
+.footer .design {
+	float: right;
+}
+
+/* End Footer */
